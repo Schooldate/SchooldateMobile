@@ -1,0 +1,264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DAD4B4815B364C000244707 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAD4B4715B364C000244707 /* UIKit.framework */; };
+		2DAD4B4A15B364C000244707 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAD4B4915B364C000244707 /* Foundation.framework */; };
+		2DAD4B4C15B364C000244707 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAD4B4B15B364C000244707 /* CoreGraphics.framework */; };
+		2DAD4B5215B364C000244707 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DAD4B5015B364C000244707 /* InfoPlist.strings */; };
+		2DAD4B5415B364C000244707 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD4B5315B364C000244707 /* main.m */; };
+		2DAD4B5815B364C000244707 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD4B5715B364C000244707 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2DAD4B4315B364C000244707 /* SchooldateMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchooldateMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DAD4B4715B364C000244707 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2DAD4B4915B364C000244707 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2DAD4B4B15B364C000244707 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2DAD4B4F15B364C000244707 /* SchooldateMobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SchooldateMobile-Info.plist"; sourceTree = "<group>"; };
+		2DAD4B5115B364C000244707 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2DAD4B5315B364C000244707 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2DAD4B5515B364C000244707 /* SchooldateMobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SchooldateMobile-Prefix.pch"; sourceTree = "<group>"; };
+		2DAD4B5615B364C000244707 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2DAD4B5715B364C000244707 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DAD4B4015B364C000244707 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DAD4B4815B364C000244707 /* UIKit.framework in Frameworks */,
+				2DAD4B4A15B364C000244707 /* Foundation.framework in Frameworks */,
+				2DAD4B4C15B364C000244707 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DAD4B3815B364BF00244707 = {
+			isa = PBXGroup;
+			children = (
+				2DAD4B4D15B364C000244707 /* SchooldateMobile */,
+				2DAD4B4615B364C000244707 /* Frameworks */,
+				2DAD4B4415B364C000244707 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DAD4B4415B364C000244707 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DAD4B4315B364C000244707 /* SchooldateMobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DAD4B4615B364C000244707 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DAD4B4715B364C000244707 /* UIKit.framework */,
+				2DAD4B4915B364C000244707 /* Foundation.framework */,
+				2DAD4B4B15B364C000244707 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2DAD4B4D15B364C000244707 /* SchooldateMobile */ = {
+			isa = PBXGroup;
+			children = (
+				2DAD4B5615B364C000244707 /* AppDelegate.h */,
+				2DAD4B5715B364C000244707 /* AppDelegate.m */,
+				2DAD4B4E15B364C000244707 /* Supporting Files */,
+			);
+			path = SchooldateMobile;
+			sourceTree = "<group>";
+		};
+		2DAD4B4E15B364C000244707 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DAD4B4F15B364C000244707 /* SchooldateMobile-Info.plist */,
+				2DAD4B5015B364C000244707 /* InfoPlist.strings */,
+				2DAD4B5315B364C000244707 /* main.m */,
+				2DAD4B5515B364C000244707 /* SchooldateMobile-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DAD4B4215B364C000244707 /* SchooldateMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DAD4B5B15B364C000244707 /* Build configuration list for PBXNativeTarget "SchooldateMobile" */;
+			buildPhases = (
+				2DAD4B3F15B364C000244707 /* Sources */,
+				2DAD4B4015B364C000244707 /* Frameworks */,
+				2DAD4B4115B364C000244707 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SchooldateMobile;
+			productName = SchooldateMobile;
+			productReference = 2DAD4B4315B364C000244707 /* SchooldateMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DAD4B3A15B364BF00244707 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = NYU;
+			};
+			buildConfigurationList = 2DAD4B3D15B364BF00244707 /* Build configuration list for PBXProject "SchooldateMobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2DAD4B3815B364BF00244707;
+			productRefGroup = 2DAD4B4415B364C000244707 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DAD4B4215B364C000244707 /* SchooldateMobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DAD4B4115B364C000244707 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DAD4B5215B364C000244707 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DAD4B3F15B364C000244707 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DAD4B5415B364C000244707 /* main.m in Sources */,
+				2DAD4B5815B364C000244707 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2DAD4B5015B364C000244707 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DAD4B5115B364C000244707 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DAD4B5915B364C000244707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2DAD4B5A15B364C000244707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DAD4B5C15B364C000244707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SchooldateMobile/SchooldateMobile-Prefix.pch";
+				INFOPLIST_FILE = "SchooldateMobile/SchooldateMobile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2DAD4B5D15B364C000244707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SchooldateMobile/SchooldateMobile-Prefix.pch";
+				INFOPLIST_FILE = "SchooldateMobile/SchooldateMobile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DAD4B3D15B364BF00244707 /* Build configuration list for PBXProject "SchooldateMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DAD4B5915B364C000244707 /* Debug */,
+				2DAD4B5A15B364C000244707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DAD4B5B15B364C000244707 /* Build configuration list for PBXNativeTarget "SchooldateMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DAD4B5C15B364C000244707 /* Debug */,
+				2DAD4B5D15B364C000244707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DAD4B3A15B364BF00244707 /* Project object */;
+}
