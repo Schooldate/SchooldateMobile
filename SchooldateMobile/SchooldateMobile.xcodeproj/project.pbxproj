@@ -257,6 +257,7 @@
 				2DAD4B5D15B364C000244707 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
