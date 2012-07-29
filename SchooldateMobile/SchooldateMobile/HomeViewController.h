@@ -11,7 +11,9 @@
 #import "constans.h"
 #import "ASIHTTPRequest.h"
 #import "EGORefreshTableHeaderView.h"
-#import "HomeViewTableCell.h"
+#import "HomeViewTableCellFull.h"
+#import "HomeViewTableCellText.h"
+#import "HomeViewTableCellImage.h"
 
 @interface HomeViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource, ASIHTTPRequestDelegate, EGORefreshTableHeaderDelegate>
 {

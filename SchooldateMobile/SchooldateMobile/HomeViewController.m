@@ -75,40 +75,72 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"HomeViewTableCell";
-    HomeViewTableCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    if (!cell) {
-        cell = [[HomeViewTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-    
     NSDictionary *update = [tableArray objectAtIndex:indexPath.row];
     NSURL *userThumbURL = [NSURL URLWithString:[update objectForKey:@"uthumb"]];
-    [cell.userThumbImageView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:userThumbURL]]];
-    cell.userNameLabel.text = [update objectForKey:@"user"];
-    cell.postTextView.text = [update objectForKey:@"post"];
-    CGRect textViewFrame = cell.postTextView.frame;
-    textViewFrame.size = cell.postTextView.contentSize;
-    [cell.postTextView setFrame:textViewFrame];
-    
-    NSString *postImageURLString = [update objectForKey:@"lobjectp"];
-    if ([postImageURLString isEqualToString:@""]) {
-        postImageURLString = [update objectForKey:@"lobjectl"];
+    if ([[update objectForKey:@"post"] isEqualToString:@""]) {
+        static NSString *CellIdentifier = @"HomeViewTableCellImage";
+        HomeViewTableCellImage *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if (!cell) {
+            cell = [[HomeViewTableCellImage alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        }
+        [cell.userThumbImageView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:userThumbURL]]];
+        cell.userNameLabel.text = [update objectForKey:@"user"];
+        
+        NSString *postImageURLString = [update objectForKey:@"lobjectp"];
+        if ([postImageURLString isEqualToString:@""]) {
+            postImageURLString = [update objectForKey:@"lobjectl"];
+        }
+        if (![postImageURLString isEqualToString:@""]) {
+            NSURL *postImageURL = [NSURL URLWithString:postImageURLString];
+            [cell.postImageView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:postImageURL]]];
+        }
+        
+        cell.agoLabel.text = [update objectForKey:@"ago"];
+        return cell;
+        
+    } else if ([[update objectForKey:@"lobjectp"] isEqualToString:@""] && [[update objectForKey:@"lobjectl"] isEqualToString:@""]) {
+        static NSString *CellIdentifier = @"HomeViewTableCellText";
+        HomeViewTableCellText *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if (!cell) {
+            cell = [[HomeViewTableCellText alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        }
+        [cell.userThumbImageView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:userThumbURL]]];
+        cell.userNameLabel.text = [update objectForKey:@"user"];
+        cell.postTextView.text = [update objectForKey:@"post"];
+        
+        cell.agoLabel.text = [update objectForKey:@"ago"];
+        return cell;
+        
+    } else {
+        static NSString *CellIdentifier = @"HomeViewTableCellFull";
+        HomeViewTableCellFull *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if (!cell) {
+            cell = [[HomeViewTableCellFull alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        }
+        [cell.userThumbImageView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:userThumbURL]]];
+        cell.userNameLabel.text = [update objectForKey:@"user"];
+        cell.postTextView.text = [update objectForKey:@"post"];
+        
+        NSString *postImageURLString = [update objectForKey:@"lobjectp"];
+        if ([postImageURLString isEqualToString:@""]) {
+            postImageURLString = [update objectForKey:@"lobjectl"];
+        }
+        if (![postImageURLString isEqualToString:@""]) {
+            NSURL *postImageURL = [NSURL URLWithString:postImageURLString];
+            [cell.postImageView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:postImageURL]]];
+        }
+        
+        cell.agoLabel.text = [update objectForKey:@"ago"];
+        return cell;
     }
-    if (![postImageURLString isEqualToString:@""]) {
-        NSURL *postImageURL = [NSURL URLWithString:postImageURLString];
-        [cell.postImageView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:postImageURL]]];
-    }
-    
-    cell.agoLabel.text = [update objectForKey:@"ago"];
-    
-    return cell;
 }
 
+/*
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 238;//[self getCellHeightAtIndex:indexPath.row];
+    return [self getCellHeightAtIndex:indexPath.row];
 }
+*/
 
 #pragma mark - Table view delegate
 
@@ -221,7 +253,20 @@
 
 - (float) getCellHeightAtIndex:(int)row
 {
+    float height = 238;
+    UIFont *font = [UIFont systemFontOfSize:14];
     
+    NSString *text = [[tableArray objectAtIndex:row] objectForKey:@"post"];
+    CGFloat textHeight = [text sizeWithFont:font].height;
+    height = height - 58 + textHeight;
+    NSString *postImageURLString = [[tableArray objectAtIndex:row] objectForKey:@"lobjectp"];
+    if ([postImageURLString isEqualToString:@""]) {
+        postImageURLString = [[tableArray objectAtIndex:row] objectForKey:@"lobjectl"];
+    }
+    if ([postImageURLString isEqualToString:@""]) {
+        height -= 112;
+    }
+    return height;
 }
 
 @end

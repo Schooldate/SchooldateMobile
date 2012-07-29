@@ -11,7 +11,6 @@
 		2D025DAB15B67F0700F4CEB5 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D025DAA15B67F0700F4CEB5 /* HomeViewController.m */; };
 		2D221B5315B90E3D00382667 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D221B5215B90E3D00382667 /* test.jpg */; };
 		2D221B6615B91C5800382667 /* constans.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D221B6515B91C5800382667 /* constans.m */; };
-		2D221B6915B925D600382667 /* HomeViewTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D221B6815B925D600382667 /* HomeViewTableCell.m */; };
 		2D55EDB015BA773100D8F8DE /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D55EDAF15BA773100D8F8DE /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2D55EDB415BA7CB500D8F8DE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D55EDB215BA7CA400D8F8DE /* QuartzCore.framework */; };
 		2D55EDBE15BA7D8A00D8F8DE /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D55EDB615BA7D8A00D8F8DE /* blackArrow.png */; };
@@ -46,6 +45,9 @@
 		2DAD4B9315B3732D00244707 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAD4B9215B3732D00244707 /* SystemConfiguration.framework */; };
 		2DAD4B9515B3733800244707 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAD4B9415B3733800244707 /* MobileCoreServices.framework */; };
 		2DAD4B9715B3734400244707 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAD4B9615B3734400244707 /* libz.dylib */; };
+		2DC0E11815BE4C92006316E9 /* HomeViewTableCellFull.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC0E11715BE4C92006316E9 /* HomeViewTableCellFull.m */; };
+		2DC0E11B15BE4D39006316E9 /* HomeViewTableCellText.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC0E11A15BE4D39006316E9 /* HomeViewTableCellText.m */; };
+		2DC0E11E15BE4DCD006316E9 /* HomeViewTableCellImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC0E11D15BE4DCD006316E9 /* HomeViewTableCellImage.m */; };
 		2DD0B47115B7CCEE00609029 /* ProfileTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD0B47015B7CCEE00609029 /* ProfileTopViewController.m */; };
 		2DD0B47415B7CD6D00609029 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD0B47315B7CD6D00609029 /* ProfileViewController.m */; };
 		2DD0B47715B7CECA00609029 /* haoran.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2DD0B47615B7CECA00609029 /* haoran.jpeg */; };
@@ -60,8 +62,6 @@
 		2D221B5215B90E3D00382667 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		2D221B6415B91C5800382667 /* constans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constans.h; sourceTree = "<group>"; };
 		2D221B6515B91C5800382667 /* constans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = constans.m; sourceTree = "<group>"; };
-		2D221B6715B925D600382667 /* HomeViewTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewTableCell.h; sourceTree = "<group>"; };
-		2D221B6815B925D600382667 /* HomeViewTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewTableCell.m; sourceTree = "<group>"; };
 		2D55EDAE15BA773100D8F8DE /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
 		2D55EDAF15BA773100D8F8DE /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
 		2D55EDB215BA7CA400D8F8DE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -118,6 +118,12 @@
 		2DAD4B9215B3732D00244707 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2DAD4B9415B3733800244707 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		2DAD4B9615B3734400244707 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2DC0E11615BE4C92006316E9 /* HomeViewTableCellFull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewTableCellFull.h; sourceTree = "<group>"; };
+		2DC0E11715BE4C92006316E9 /* HomeViewTableCellFull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewTableCellFull.m; sourceTree = "<group>"; };
+		2DC0E11915BE4D39006316E9 /* HomeViewTableCellText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewTableCellText.h; sourceTree = "<group>"; };
+		2DC0E11A15BE4D39006316E9 /* HomeViewTableCellText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewTableCellText.m; sourceTree = "<group>"; };
+		2DC0E11C15BE4DCD006316E9 /* HomeViewTableCellImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewTableCellImage.h; sourceTree = "<group>"; };
+		2DC0E11D15BE4DCD006316E9 /* HomeViewTableCellImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewTableCellImage.m; sourceTree = "<group>"; };
 		2DD0B46F15B7CCEE00609029 /* ProfileTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileTopViewController.h; sourceTree = "<group>"; };
 		2DD0B47015B7CCEE00609029 /* ProfileTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileTopViewController.m; sourceTree = "<group>"; };
 		2DD0B47215B7CD6D00609029 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
@@ -204,8 +210,12 @@
 				2D025DA315B679D900F4CEB5 /* HomeTopViewController.m */,
 				2D025DA915B67F0700F4CEB5 /* HomeViewController.h */,
 				2D025DAA15B67F0700F4CEB5 /* HomeViewController.m */,
-				2D221B6715B925D600382667 /* HomeViewTableCell.h */,
-				2D221B6815B925D600382667 /* HomeViewTableCell.m */,
+				2DC0E11615BE4C92006316E9 /* HomeViewTableCellFull.h */,
+				2DC0E11715BE4C92006316E9 /* HomeViewTableCellFull.m */,
+				2DC0E11915BE4D39006316E9 /* HomeViewTableCellText.h */,
+				2DC0E11A15BE4D39006316E9 /* HomeViewTableCellText.m */,
+				2DC0E11C15BE4DCD006316E9 /* HomeViewTableCellImage.h */,
+				2DC0E11D15BE4DCD006316E9 /* HomeViewTableCellImage.m */,
 				2DD0B46F15B7CCEE00609029 /* ProfileTopViewController.h */,
 				2DD0B47015B7CCEE00609029 /* ProfileTopViewController.m */,
 				2DD0B47215B7CD6D00609029 /* ProfileViewController.h */,
@@ -406,8 +416,10 @@
 				2DD0B47415B7CD6D00609029 /* ProfileViewController.m in Sources */,
 				2DD0B47A15B7D2D000609029 /* MenuViewTableCell.m in Sources */,
 				2D221B6615B91C5800382667 /* constans.m in Sources */,
-				2D221B6915B925D600382667 /* HomeViewTableCell.m in Sources */,
 				2D55EDB015BA773100D8F8DE /* EGORefreshTableHeaderView.m in Sources */,
+				2DC0E11815BE4C92006316E9 /* HomeViewTableCellFull.m in Sources */,
+				2DC0E11B15BE4D39006316E9 /* HomeViewTableCellText.m in Sources */,
+				2DC0E11E15BE4DCD006316E9 /* HomeViewTableCellImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
